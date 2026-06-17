@@ -1,15 +1,15 @@
-# 🚀 GitHub Profile Analyzer API
+# GitHub Profile Analyzer API
 
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D%2018.0.0-blue.svg)](https://nodejs.org)
 [![Express.js](https://img.shields.io/badge/framework-Express.js-lightgrey.svg)](https://expressjs.com)
 [![Sequelize ORM](https://img.shields.io/badge/orm-Sequelize%20(MySQL)-blue.svg)](https://sequelize.org)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
-A robust, enterprise-grade RESTful API built with **Node.js, Express.js, and MySQL (via Sequelize ORM)** that fetches public GitHub profile data, computes deep analytical insights (such as star counts, fork counts, and top programming languages), and caches/synchronizes the results in a relational database.
+A robust, enterprise-grade RESTful API built with Node.js, Express.js, and MySQL (via Sequelize ORM) that fetches public GitHub profile data, computes deep analytical insights (such as star counts, fork counts, and top programming languages), and caches/synchronizes the results in a relational database.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Profile Analysis**: Fetches public user details and repositories from the official GitHub Public API.
 - **Relational Data Caching**: Securely caches and updates profile insights inside a MySQL database to bypass API rate limits.
@@ -22,7 +22,7 @@ A robust, enterprise-grade RESTful API built with **Node.js, Express.js, and MyS
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Runtime Environment**: Node.js
 - **Web Framework**: Express.js
@@ -34,7 +34,7 @@ A robust, enterprise-grade RESTful API built with **Node.js, Express.js, and MyS
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 git-profile-analyser/
@@ -51,7 +51,7 @@ git-profile-analyser/
 │   └── profileRoutes.js     # Express routes definition
 ├── services/
 │   └── githubService.js     # External Axios client wrapper & metrics computation
-├── .env                     # Local environment credentials (ignored)
+├── .env                     # Local environment variables (ignored)
 ├── .env.example             # Configuration template
 ├── .gitignore               # Ignored directories and files
 ├── package.json             # Manifest scripts and dependencies
@@ -61,7 +61,7 @@ git-profile-analyser/
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -73,7 +73,7 @@ git-profile-analyser/
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 Create a `.env` file at the root of the project and define the following variables:
 
@@ -96,7 +96,7 @@ GITHUB_TOKEN=your_github_personal_access_token
 
 ---
 
-## 🚀 Installation & Local Setup
+## Installation & Local Setup
 
 ### 1. Clone the repository
 ```bash
@@ -134,5 +134,5 @@ cp .env.example .env
 
 ---
 
-## ☁️ Live Deployment
-The production-ready API is fully containerized and configured for deployment on cloud platforms such as **Render**, **Heroku**, or **AWS ECS**, utilizing environment variables injected during runtime.
+## Live Deployment
+The production-ready API is fully containerized and configured for deployment on cloud platforms such as Render, Heroku, or AWS ECS, utilizing environment variables injected during runtime.
